@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="author" content="Jeisson Hidalgo-Céspedes"/>
+	<link rel="icon" type="image/png" href="img/pandemic_plan.png"/>
+	<link rel="stylesheet" type="text/css" href="css/client.css"/>
+	<title id="title1">Nodo verde</title>
+</head>
+	<body data-ws="172.16.202.39:8450">
+	<main>
+		<article id="send_area">
+			<header id="site_header">
+				<img src="img/pandemic_plan.png" alt="Logo del sitio web" width="200" height="100"/>
+				<h1 id="head1">Nodo verde</h1>
+				<p id="estado" class="error">Desconectado</p>
+			</header>
+			<div id="form">
+				<p id="lista_vecinos">
+				</p>
+				<p id="send_controls">
+					<input id="message_field" type="text" placeholder="Escriba su mensaje (hasta 200 caracteres)"/>
+					<button id="send_button">Enviar</button>
+				</p>
+			</div>
+		</article>
+		<article id="mensajes">
+			<h2>Historial de Mensajes</h2>
+		</article>
+	</main>
+	<script src="js/client.js" async="async"></script>
+</body>
+</html>
