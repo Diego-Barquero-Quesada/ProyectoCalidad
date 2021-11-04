@@ -38,7 +38,7 @@ jobs:
           echo "$HOME\.sonar\build-wrapper-win-x86" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
       - name: Run build-wrapper
         run: |
-          build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }}<g++ src/nodo_verde/Nodo_verde.cc src/nodo_verde/agente_naranja/Agente_naranja.cc \src/nodo_verde/agente_verde/Agente_verde.cc src/nodo_verde/agente_azul/Agente_azul.cc \src/nodo_verde/agente_rosado/Agente_rosado.cc src/nodo_verde/agente_red/Agente_red.cc \src/common/cola/Cola.cc -pthread>
+          build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }}<g++ src/nodo_verde/Nodo_verde.cc src/nodo_verde/agente_naranja/Agente_naranja.cc \src/nodo_verde/agente_verde/Agente_verde.cc src/nodo_verde/agente_azul/Agente_azul.cc \src/nodo_verde/agente_rosado/Agente_rosado.cc -pthread>
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
